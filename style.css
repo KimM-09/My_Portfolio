@@ -1,0 +1,31 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+}
+
+li {
+    list-style-type: none;
+}
+
+.w3-col img {
+    margin-bottom: -6px;
+    opacity: 0.8;
+    cursor: pointer;
+    width: 50%;
+}
+
+.w3-col img:hover {
+    opacity: 1
+}
+
+hr {
+    height:2px;
+    border-width:0;
+    color:rgba(128, 128, 128, 0.20);
+    background-color:rgba(128, 128, 128, 0.20)
+
+}
