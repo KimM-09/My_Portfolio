@@ -13,6 +13,7 @@ li {
 
 .w3-col img {
     margin-bottom: -6px;
+    padding-top: 10px;
     opacity: 0.8;
     cursor: pointer;
     width: 50%;
@@ -28,4 +29,8 @@ hr {
     color:rgba(128, 128, 128, 0.20);
     background-color:rgba(128, 128, 128, 0.20)
 
+}
+
+.sub {
+    font-size: 12px;
 }
