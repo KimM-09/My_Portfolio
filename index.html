@@ -1,252 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Kim McLane</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>Kim<br>McLane</b></h3>
-        <a href="javascript:void(0)" onclick="w3_close()"
-            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    </nav>
-
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">Kim McLane</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim M New Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">        
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
-
-        <!-- Project grid -->
-        <div class="w3-row-padding">
-            <div class="w3-col w3-center">
-                <img src="images\Dashboard.png" onclick="onClick(this)"
-                    alt="Periodic Tables Dashboard">
-                    <h3>Periodic Tables</h3>
-                    <p>A full stack application to create and track restaurant reservations</p>
-                    <ul>
-                        <li>Developed a full-stack reservation and table management system, utilizing React Router and Express to build a RESTful API for seamless HTTP requests to a PostgreSQL database.</li>
-                        <li>Implemented CRUD functions and utilized knex queries to efficiently handle data interactions with the database.</li>
-                        <li>Leveraged Git for version control, ensuring secure management of changes and preventing sensitive information from being pushed to repositories.</li>
-                    </ul>
-                    <p>Technology: React, Node.js, Express, Knex and PostgreSQL.</p>
-                    <p><a href="https://restaurant-reservation-front-c1e0.onrender.com" target="_blank">Live Demo*</a></p>
-                    <p class="sub">*Link opens on a new page</p>
-                    <hr>
-                    <img src="images\WeLoveMovies.png"  onclick="onClick(this)"
-                    alt="We Love Movies">
-                <h3>We Love Movies</a></h3>
-                    <p>A movie database application</p>
-                    <ul>
-                        <li>Assembled the backend of a movie website allowing any user to search for their favorite movies</li>
-                        <li>Used CRUD methods for reviews, and view theaters and movies that are showing.</li>
-                        <li>Applied router and controller functions to retrieve a user's specific requests.</li>
-                    </ul>
-                    <p>Technology: Node.js, Express, and Knex. Version control with Git.</p>
-                    <p><a href="https://we-love-movies-front-end-hs1c.onrender.com" target="_blank">Live Demo*</a></p>
-                    <p class="sub">*Link opens on a new page</p>
-            </div>
-            <div class="w3-col w3-center">
-                <hr>
-                <img src="images\thinkful-cupid.png" onclick="onClick(this)" alt="Thinkful-Cupid">
-                <h3>Thinkful Cupid</h3>
-                <p>Responsive OkCupid Frontend Application</p>
-                <ul>
-                    <li>Built a frontend looklike of OkCupid static website with responsive views for mobile, tablets and desktop</li>
-                    <li>Leveraged Flexbox and other CSS tools for layouts</li>
-                </ul>
-                <p>Technology: HTML, CSS, Flexbox</p>
-                <p><a href="https://kimm-09.github.io/Thinkfulcupid/" target="_blank">Live Demo*</a></p>
-                <p class="sub">*Link opens on a new page</p>
-                <hr>
-                <img src="images\Recipe-tracker.png"  onclick="onClick(this)" alt="Recipe Tracking App">
-                <h3>Recipe Tracker</h3>
-                <p>Recipe Tracker Application</p>
-                <ul>
-                    <li>Built a React application to allow saving recipe information.</li>
-                    <li> Implemented the single responsibility principle with React components.</li>
-                </ul>
-                <p>Technology: React, HTML5, CSS, Bootstrap</p>
-                <p><a href="https://recipe-app-wguf.onrender.com" target="_blank">Live Demo*</a></p>
-                <p class="sub">*Link opens on a new page</p>
-            </div>
-            <!-- <hr> -->
-        </div>
-               
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
-                <p id="caption"></p>
-            </div>
-        </div>
-
-        <!-- About section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-            <h4><b>About Me</b></h4>
-            <img src="images\pic-of-me.jpg" alt="Me" class="w3-image w3-padding-32" width="300" height="250">
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Kim</h4>
-                <p>
-                    I am a graduate of Chegg Skills Full Stack Software Engineer bootcamp. During the bootcamp I acquired comprehensive 
-                    knowledge of industry best practices and software development standards, focusing on JavaScript, HTML5, CSS3, React Native, 
-                    Node.js, PostgreSQL, RESTful APIs, algorithms, and data structures.
-                </p>
-                <!-- <hr class="w3-opacity"> -->
-                <!-- <h4 class="w3-padding-16">Technical Skills</h4>
-                <p class="w3-wide">Photography</p>
-                <div class="w3-white">
-                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
-                </div>
-                <p class="w3-wide">Web Design</p>
-                <div class="w3-white">
-                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
-                </div>
-                <p class="w3-wide">Photoshop</p>
-                <div class="w3-white">
-                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
-                </div> -->
-
-                <!-- <hr class="w3-opacity"> -->
-
-                <!-- <h4 class="w3-padding-16">How much I charge</h4>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-half w3-margin-bottom">
-                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-                            <li class="w3-padding-16">Web Design</li>
-                            <li class="w3-padding-16">Photography</li>
-                            <li class="w3-padding-16">5GB Storage</li>
-                            <li class="w3-padding-16">Mail Support</li>
-                            <li class="w3-padding-16">
-                                <h2>$ 10</h2>
-                                <span class="w3-opacity">per month</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="w3-half">
-                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
-                            <li class="w3-padding-16">Web Design</li>
-                            <li class="w3-padding-16">Photography</li>
-                            <li class="w3-padding-16">50GB Storage</li>
-                            <li class="w3-padding-16">Endless Support</li>
-                            <li class="w3-padding-16">
-                                <h2>$ 25</h2>
-                                <span class="w3-opacity">per month</span>
-                            </li>
-                            <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-
-        <!-- Contact section -->
-        <!-- <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-            <div class="w3-content" style="max-width:600px">
-                <h4 class="w3-center"><b>Contact Me</b></h4>
-                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting
-                    new people!</p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-section">
-                        <label>Name</label>
-                        <input class="w3-input w3-border" type="text" name="Name" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Email</label>
-                        <input class="w3-input w3-border" type="text" name="Email" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Message</label>
-                        <input class="w3-input w3-border" type="text" name="Message" required>
-                    </div>
-                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-                </form>
-            </div>
-        </div> -->
-
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-32 w3-light-grey" id="contact">
-            <h4 class="w3-center"><b>Contact Me</b></h4>
-            <div class="w3-row-padding">
-                
-                <div class="w3-third w3-center">
-                    <a href="https://www.linkedin.com/in/kim-mclane/">
-                    <img src="images\linkedin.svg" width="50px" height="50px">
-                    </a>
-                </div>
-
-                <div class="w3-third w3-center">
-                    <a href="https://github.com/KimM-09">
-                    <img src="images\github-svgrepo-com.svg" width="60px" height="60px">
-                    </a>
-                </div>
-
-                <div class="w3-third w3-center">
-                    <a href="mailto:kmmclan09@gmail.com">
-                    <img src="images\gmail-svgrepo-com.svg" width="50px" height="50px">
-                    </a>
-                </div>
-
-            </div>
-        </footer>
-
-        <div class="w3-black w3-center w3-padding-24">Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="_blank" class="w3-hover-opacity">W3Schools Spaces</a></div>
-
-
-        <!-- End page content -->
+    <section id="welcome-section">
+      <div id="about">
+      <h1>HI! I'm Kim</h1>
+      <p>A web developer 😺</p>
+      <div class="about">
+      <p>I am a graduate of Chegg Skills Full Stack Software Engineer bootcamp. During the bootcamp I acquired comprehensive knowledge of industry 
+        best practices and software development standards, focusing on JavaScript, HTML5, CSS3, React Native, Node.js, PostgreSQL, RESTful APIs, 
+        algorithms, and data structures.</p>
     </div>
-
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-    </script>
-
-
-</body>
-
+      </div>
+    </section>
+    <section id="projects">
+      <h2>These are some of my projects</h2>
+      <div class="projects">
+        <div class="project-tile">
+        <a href="https://kimm-09.github.io/Thinkfulcupid/" target="_blank"><img src="https://kimm-09.github.io/My_Portfolio/images/thinkful-cupid.png" ></a> 
+        <p>Responsive Web Page</p>
+        </div>
+        <div class="project-tile">
+          <a href="https://recipe-app-wguf.onrender.com/" target="_blank"><img src="https://kimm-09.github.io/My_Portfolio/images/Recipe-tracker.png" ></a>
+          <p>Recipe Tracker App</p>
+        </div>
+        <div class="project-tile">
+          <a href="https://we-love-movies-front-end-hs1c.onrender.com/" target="_blank"><img src="https://kimm-09.github.io/My_Portfolio/images/WeLoveMovies.png" ></a>
+          <p>Movie Database Application</p>
+        </div>
+        <div class="project-tile">
+            <a href="https://restaurant-reservation-front-c1e0.onrender.com" target="_blank"><img src="https://kimm-09.github.io/My_Portfolio/images/Dashboard.png"></a>
+            <p>Restaurant Reservation App</p>
+        </div>
+        <div class="project-tile">
+            <a href="https://kimm-09.github.io/Stopwatch/" target="_blank"><img src="images\Timer.png"></a>
+            <p>Timer Application</p>
+        </div>
+        <div class="project-tile">
+          <a href="https://kimm-09.github.io/Rock-Paper-Scissors/" target="_blank"><img src="images\RockPaperScissors.png"></a>
+          <p>Rock, Paper, Scissors Game</p>
+        </div>
+        <div class="project-tile">
+          <a href="https://kimm-09.github.io/Palindrome-Checker/" target="_blank"><img src="images\Palindrome.png"></a>
+          <p>Palindrome Checker</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact">
+      <div class="github">
+        <p>GitHub</p>
+        <a href="https://github.com/KimM-09" target="_blank" id="profile-link"><img src="images\github-svgrepo-com.svg" width="75"></a>
+      </div>
+      <div class="gmail">
+        <p>Gmail</p>
+        <a href="mailto:kmmclan09@gmail.com">
+            <img src="images\gmail-svgrepo-com.svg" width="75">
+        </a>
+      </div>
+      <div class="linkedin">
+        <p>LinkedIn</p>
+        <a href="https://www.linkedin.com/in/kim-mclane/" target="_blank"><img src="images\linkedin-svgrepo-com.svg" width="75"></a>
+      </div>
+      </div>
+    </section>
+  </body>
 </html>
